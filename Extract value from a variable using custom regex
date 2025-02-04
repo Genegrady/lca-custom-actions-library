@@ -1,0 +1,12 @@
+Extract value from a variable using custom regex
+
+var str = 'This is a string with ${var1} and ${var2}';
+
+var re = /\$\{(\w+?)\}/g;
+var arr = [];
+var match;
+while (match = re.exec(str)) {
+  arr.push(match[1]);
+}
+
+console.log(arr);
