@@ -1,0 +1,6 @@
+Explicit Wait Sample
+
+document.addEventListener('DOMContentLoaded', function load() {
+    if (!window.jQuery) return setTimeout(load, 50);
+    //your synchronous or asynchronous jQuery-related code
+}, false);
